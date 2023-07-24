@@ -11,9 +11,9 @@ public struct ChirpResponseDTO: Identifiable, Codable, Hashable {
 	public var id: UUID
 	public var message: String
 	public var postedDate: Date
-	public var postedToUID: String
+	public var postedToUID: UUID
 
-	public init(id: UUID, message: String, postedDate: Date, postedToUID: String) {
+	public init(id: UUID, message: String, postedDate: Date, postedToUID: UUID) {
 		self.id = id
 		self.message = message
 		self.postedDate = postedDate
