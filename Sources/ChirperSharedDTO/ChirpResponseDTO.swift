@@ -10,7 +10,7 @@ import Foundation
 public struct ChirpResponseDTO: Identifiable, Codable, Hashable {
 	public var id: UUID
 	public var message: String
-	public var postedDate: Date
+	public var postedDate: Date?
 	public var postedToUID: UUID?
 
 	public init(id: UUID, message: String, postedDate: Date, postedToUID: UUID?) {
