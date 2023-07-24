@@ -8,13 +8,11 @@
 import Foundation
 
 public struct ChirpResponseDTO: Codable {
-	public var error: String? = nil
 	public var id: UUID
 	public var message: String
 	public var postedDate: Date
 
-	public init(error: String?, id: UUID, message: String, postedDate: Date) {
-		self.error = error
+	public init(id: UUID, message: String, postedDate: Date) {
 		self.id = id
 		self.message = message
 		self.postedDate = postedDate
