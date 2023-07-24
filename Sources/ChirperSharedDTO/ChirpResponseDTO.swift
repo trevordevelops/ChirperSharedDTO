@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ChirpResponseDTO: Codable {
+public struct ChirpResponseDTO: Identifiable, Codable, Hashable {
 	public var id: UUID
 	public var message: String
 	public var postedDate: Date
